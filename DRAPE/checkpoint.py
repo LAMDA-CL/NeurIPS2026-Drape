@@ -1,0 +1,12 @@
+"""File names shared by DRAPE checkpoint writers and readers."""
+
+ADAPTER_CONFIG_NAME = "adapter_config.json"
+ADAPTER_WEIGHTS_NAME = "adapter_model.bin"
+PROJECTOR_WEIGHTS_NAME = "mm_projector.bin"
+NULL_SPACE_WEIGHTS_NAME = "null_space_projection.pt"
+ROUTER_DIR_NAME = "router"
+ROUTER_CONFIG_NAME = "router_config.json"
+ROUTER_CENTERS_NAME = "task_centers.pt"
+ROUTER_COUNTS_NAME = "task_sample_counts.json"
+TASK_GENERATORS_DIR_NAME = "task_generators"
+GENERATORS_CONFIG_NAME = "generators_config.json"
