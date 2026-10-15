@@ -15,9 +15,9 @@ from pycocoevalcap.eval import COCOEvalCap
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--annotation-file', type=str, default='./playground/Instructions_slim/VizWiz/val_new.json')
-    parser.add_argument('--result-file', type=str, default='./results/CoIN_slim_new/VizWiz/Zero_shot/merge.jsonl')
-    parser.add_argument('--output-dir', type=str)
+    parser.add_argument('--annotation-file', type=str, default='data/instructions/UCIT/VizWiz/val_coco_type_3000.json')
+    parser.add_argument('--result-file', type=str, default='./results/UCIT/VizWiz/task6/merge.jsonl')
+    parser.add_argument('--output-dir', type=str, default='./results/UCIT/VizWiz/task6')
     return parser.parse_args()
 
 def create_coco_type(annotation_file, result_file, output_dir):

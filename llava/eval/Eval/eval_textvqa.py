@@ -8,9 +8,9 @@ from llava.eval.Eval.m4c_evaluator import TextVQAAccuracyEvaluator
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--annotation-file', type=str, default='data/instructions/Instructions_Original/TextVQA/val.json')
-    parser.add_argument('--result-file', type=str, default='./results/CoIN/MiniGPTv2/TextVQA/Zero_Shot/merge.jsonl')
-    parser.add_argument('--output-dir', type=str)
+    parser.add_argument('--annotation-file', type=str, default='data/instructions/Instructions_Original/TextVQA/valid.json')
+    parser.add_argument('--result-file', type=str, default='./results/CoIN/TextVQA/task8/merge.jsonl')
+    parser.add_argument('--output-dir', type=str, default='./results/CoIN/TextVQA/task8')
     return parser.parse_args()
 
 def prompt_processor(prompt):

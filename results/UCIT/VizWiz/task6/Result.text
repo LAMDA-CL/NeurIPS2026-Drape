@@ -1,0 +1,9 @@
+Samples: 3000
+Bleu_1: 73.15
+Bleu_2: 55.84
+Bleu_3: 41.99
+Bleu_4: 31.91
+METEOR: 24.63
+ROUGE_L: 52.22
+CIDEr: 110.04
+Average: 55.68

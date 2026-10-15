@@ -9,7 +9,7 @@ IFS=',' read -ra GPULIST <<< "$gpu_list"
 CHUNKS=${#GPULIST[@]}
 
 if [ ! -n "$1" ] ;then
-    STAGE='MoELoRA'
+    STAGE='task8'
 else
     STAGE=$1
 fi
@@ -21,7 +21,7 @@ else
 fi
 
 
-RESULT_DIR="./results/GQA"
+RESULT_DIR="./results/CoIN/GQA"
 
 for IDX in $(seq 0 $((CHUNKS-1))); do
     CUDA_VISIBLE_DEVICES="${GPULIST[$IDX]}" python -m llava.eval.Eval.model_others \

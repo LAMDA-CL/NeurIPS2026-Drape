@@ -7,9 +7,9 @@ from tqdm import tqdm
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--test-file', type=str, default='./playground/Instructions_slim/ImageNet/test.json')
-    parser.add_argument('--result-file', type=str, default='./results/CoIN_normaltrain_testslim/ImageNet/OCRVQA/merge.jsonl')
-    parser.add_argument('--output-dir', type=str, default='./results/CoIN_normaltrain_testslim/ImageNet/OCRVQA')
+    parser.add_argument('--test-file', type=str, default='data/instructions/Instructions_Original/ImageNet/test.json')
+    parser.add_argument('--result-file', type=str, default='./results/CoIN/ImageNet/task8/merge.jsonl')
+    parser.add_argument('--output-dir', type=str, default='./results/CoIN/ImageNet/task8')
     return parser.parse_args()
 
 

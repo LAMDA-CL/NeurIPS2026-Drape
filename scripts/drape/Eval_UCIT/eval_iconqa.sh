@@ -13,14 +13,14 @@ IFS=',' read -ra GPULIST <<< "$gpu_list"
 CHUNKS=${#GPULIST[@]}
 
 if [ ! -n "$1" ] ;then
-    STAGE='hide'
+    STAGE='task6'
 else
     STAGE=$1
 fi
 
-MODELPATH=$2
+MODELPATH="${2:-checkpoints/llava_drape_UCIT_Task6}"
 
-RESULT_DIR="./results/UCIT/each_dataset/IconQA"
+RESULT_DIR="./results/UCIT/IconQA"
 mkdir -p "$RESULT_DIR/$STAGE"
 
 for IDX in $(seq 0 $((CHUNKS-1))); do

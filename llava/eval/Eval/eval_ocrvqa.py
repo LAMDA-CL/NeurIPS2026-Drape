@@ -6,10 +6,10 @@ import json
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--annotation-file', type=str,
-                        default='./LLaVA/playground/Instructions_slim/OCRVQA/test_1.json')
+                        default='data/instructions/Instructions_Original/OCRVQA/test.json')
     parser.add_argument('--result-file', type=str,
-                        default='./LLaVA/results/CoIN_slim_new_0.8/OCRVQA/Finetune/merge.jsonl')
-    parser.add_argument('--output-dir', type=str, default='./LLaVA/results/CoIN_slim_new_0.8/OCRVQA/Finetune')
+                        default='./results/CoIN/OCRVQA/task8/merge.jsonl')
+    parser.add_argument('--output-dir', type=str, default='./results/CoIN/OCRVQA/task8')
     return parser.parse_args()
 
 

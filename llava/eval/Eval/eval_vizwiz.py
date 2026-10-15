@@ -5,9 +5,9 @@ import json
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--annotation-file', type=str, default='./playground/Instructions_slim/VizWiz/val_new.json')
-    parser.add_argument('--result-file', type=str, default='./results/CoIN_slim_new/VizWiz/Zero_shot/merge.jsonl')
-    parser.add_argument('--output-dir', type=str)
+    parser.add_argument('--annotation-file', type=str, default='data/instructions/Instructions_Original/VizWiz/val.json')
+    parser.add_argument('--result-file', type=str, default='./results/CoIN/VizWiz/task8/merge.jsonl')
+    parser.add_argument('--output-dir', type=str, default='./results/CoIN/VizWiz/task8')
     return parser.parse_args()
 
 

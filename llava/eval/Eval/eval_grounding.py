@@ -6,10 +6,10 @@ from PIL import Image
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--test-file', type=str, default='playground/Instructions_slim/Grounding/test.json')
+    parser.add_argument('--test-file', type=str, default='data/instructions/Instructions_Original/Grounding/test.json')
     parser.add_argument('--result-file', type=str,
-                        default='results/CoIN_normaltrain_testslim/Grounding/OCRVQA/merge.jsonl')
-    parser.add_argument('--output-dir', type=str)
+                        default='./results/CoIN/Grounding/task8/merge.jsonl')
+    parser.add_argument('--output-dir', type=str, default='./results/CoIN/Grounding/task8')
     return parser.parse_args()
 
 

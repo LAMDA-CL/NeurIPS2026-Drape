@@ -10,7 +10,7 @@ IFS=',' read -ra GPULIST <<< "$gpu_list"
 CHUNKS=${#GPULIST[@]}
 
 if [ ! -n "$1" ] ;then
-    STAGE='MoELoRA'
+    STAGE='task8'
 else
     STAGE=$1
 fi
@@ -22,7 +22,7 @@ else
 fi
 
 
-RESULT_DIR="./results/ScienceQA"
+RESULT_DIR="./results/CoIN/ScienceQA"
 mkdir -p "$RESULT_DIR/$STAGE"
 
 for IDX in $(seq 0 $((CHUNKS-1))); do

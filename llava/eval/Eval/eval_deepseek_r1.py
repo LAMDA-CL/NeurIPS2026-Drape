@@ -9,9 +9,9 @@ from multiprocessing import Pool, cpu_count
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--annotation-file', type=str, default='data/instructions/Instructions_Original/TextVQA/val.json')
-    parser.add_argument('--result-file', type=str, default='./LLaVA/results/Instructions/TextVQA/Zero_shot/merge.jsonl')
-    parser.add_argument('--output-dir', type=str)
+    parser.add_argument('--annotation-file', type=str, default='data/instructions/UCIT/ImageNet-R/test_3000.json')
+    parser.add_argument('--result-file', type=str, default='./results/UCIT/ImageNet-R/task6/merge.jsonl')
+    parser.add_argument('--output-dir', type=str, default='./results/UCIT/ImageNet-R/task6')
     return parser.parse_args()
 
 def prompt_processor(prompt):

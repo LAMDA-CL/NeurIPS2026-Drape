@@ -5,9 +5,9 @@ import json
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--annotation-file', type=str, default='./playground/Instructions_slim/VQAv2/val.json')
-    parser.add_argument('--result-file', type=str, default='./results/CoIN_slim/VQAv2/Zero_shot/merge.jsonl')
-    parser.add_argument('--output-dir', type=str)
+    parser.add_argument('--annotation-file', type=str, default='data/instructions/Instructions_Original/VQAv2/val.json')
+    parser.add_argument('--result-file', type=str, default='./results/CoIN/VQAv2/task8/merge.jsonl')
+    parser.add_argument('--output-dir', type=str, default='./results/CoIN/VQAv2/task8')
     return parser.parse_args()
 
 
