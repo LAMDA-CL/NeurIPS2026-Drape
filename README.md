@@ -19,7 +19,7 @@
 The code repository for "[Dynamic Cross-Modal Prompt Generation for Multimodal Continual Instruction Tuning](https://arxiv.org/abs/2605.10765)". If you use this work, please cite:
 
 ```bibtex
-@inproceedings{hu2026drape,
+@inproceedings{hu2026dynamic,
   title     = {Dynamic Cross-Modal Prompt Generation for Multimodal Continual Instruction Tuning},
   author    = {Hu, Tao and Zhou, Da-Wei},
   booktitle = {NeurIPS},
